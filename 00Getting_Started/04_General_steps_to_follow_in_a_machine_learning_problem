@@ -1,0 +1,74 @@
+## General Steps to Follow in a Machine Learning Problem
+
+**Last Updated:** 11 Mar, 2024
+
+Machine learning is a method of data analysis that automates analytical model building. In simple terms, machine learning is “making a machine learn”. Machine learning is a new field that combines many traditional disciplines. It is a subset of AI.
+
+### What is ML Pipeline?
+
+ML pipeline expresses the workflow by providing a systematic way on how to proceed with the machine learning model. ML pipelines automate the process of machine learning and following the pipeline makes the process of making ML models systematic and easy. Here is the diagrammatic view of the ML pipeline:
+
+![Machine Learning Pipeline](insert image link here)
+
+The Machine Learning pipeline starts with data collection and integration. After data is collected, analysis and visualization of data is done. Further, the most crucial step feature selection and engineering is performed then the model is trained. After that model evaluation is done and our model becomes ready for prediction!
+
+To understand the pipeline well, consider building an ML model for a company’s customer care service. Consider a company XYZ, as an online book shop, that delivers books and kindle to its customer and this company wants an improved customer care service. It wants that if a customer calls the helpline for any kind of issue, say for replacement of books, complaint of kindle purchased or some other services. The company wants to ensure that the customer’s call gets directed to the right service person in minimum time and that the process should be smooth. To build a model for customer care services of the company, we will use the ML pipeline for the systematic development of the model.
+
+1. **Data Collection and Integration:** 
+
+   - The first step of the ML pipeline involves the collection of data and integration of data.
+   - Data collected acts as an input to the model (data preparation phase)
+   - Inputs are called features.
+   - Data collected in the case of our considered example involves a lot of data. The collected data should answer the following questions- What is past customer history? What were the past orders? Is the customer a prime member of our bookstore? Does the customer own a kindle? Has the customer made any previous complaints? What was the most number of complaints?
+   - The more the data is, more the better our model becomes.
+   - Once the data is collected we need to integrate and prepare the data.
+   - Integration of data means placing all related data together.
+   - Then data preparation phase starts in which we manually and critically explore the data.
+   - The data preparation phase tells the developer that is the data matching the expectations. Is there enough info to make an accurate prediction? Is the data consistent?
+
+2. **Exploratory Data Analysis and Visualization:**
+
+   - Once the data is prepared, the developer needs to visualize the data to have a better understanding of relationships within the dataset.
+   - When we get to see data, we can notice the unseen patterns that we may not have noticed in the first phase.
+   - It helps developers easily identify missing data and outliers.
+   - Data visualization can be done by plotting histograms, scatter plots, etc.
+   - After visualization is done data is analyzed so that the developer can decide what ML technique he may use.
+   - In the considered example case unsupervised learning may be used to analyze customer purchasing habits.
+
+3. **Feature Selection and Engineering:**
+
+   - Feature selection means selecting what features the developer wants to use within the model.
+   - Features should be selected so that a minimum correlation exists between them and a maximum correlation exists between the selected features and output.
+   - Feature engineering is the process to manipulate the original data into new and potential data that has a lot many features within it.
+   - In simple words, Feature engineering is converting raw data into useful data or getting the maximum out of the original data.
+   - Feature engineering is arguably the most crucial and time-consuming step of the ML pipeline.
+   - Feature selection and engineering answers questions – Are these features going to make any sense in our prediction?
+   - It deals with the accuracy and precision of data.
+
+4. **Model Training:**
+
+   - After the first three steps are done completely we enter the model training phase.
+   - It is the first step officially when the developer gets to train the model on basis of data.
+   - To train the model, data is split into three parts- Training data, validation data, and test data.
+   - Around 70%-80% of data goes into the training data set which is used in training the model.
+   - Validation data is also known as the development set or dev set and is used to avoid overfitting or underfitting situations i.e. enabling hyperparameter tuning.
+   - Hyperparameter tuning is a technique used to combat overfitting and underfitting.
+   - Validation data is used during model evaluation.
+   - Around 10%-15% of data is used as validation data.
+   - Rest 10%-15% of data goes into the test data set. Test data set is used for testing after the model preparation.
+   - It is crucial to randomize data sets while splitting the data to get an accurate model.
+   - Data can be randomized using Scikit learn in python.
+
+5. **Model Evaluation:**
+
+   - After the model training, validation, or development data is used to evaluate the model.
+   - To get the most accurate predictions to test data may be used for further model evaluation.
+   - A confusion matrix is created after model evaluation to calculate accuracy and precision numerically.
+   - After model evaluation, our model enters the final stage that is prediction.
+
+6. **Prediction:**
+
+   - In the prediction phase, the developer deploys the model.
+   - After model deployment, it becomes ready to make predictions.
+   - Predictions are made on training data and test data to have a better understanding of the build model.
+   - The deployment of the model isn’t a one-time exercise. As more and more
